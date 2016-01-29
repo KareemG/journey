@@ -1,0 +1,14 @@
+extends layout
+block content
+  h1 journey &#9055;
+  h3 Dashboard 
+  -var text = "";
+  -for (i=0; i<user.journeys.length; i++) {
+    #journey  
+      #icon
+      h3 #{user.journeys[i].journeyName}
+      #textjourney
+        p <em>#{user.journeys[i].url}</em>
+        p Time Spent: <em?>#{user.journeys[i].timeSpent}</em>
+        p Description: <em>#{user.journeys[i].description}</em>
+  -}
